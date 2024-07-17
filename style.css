@@ -1,0 +1,824 @@
+/* Barra de navegacion */
+.navbar {
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+/*......  particulas .... */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .mainanimation{
+	/*background: red;*/
+	width: 80%;
+	margin-left: 10%;
+	min-height: 450px;
+	position: absolute; /*para que el resto se encime sobre
+	                      este espacio*/
+}
+  
+
+/*... fin particulas .... */
+
+/*  Seccion hero */
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+.hero-imagen-perfil {
+    width: 20%;
+    height: auto;
+}
+.hero-inferior-imagen {
+    max-width: 600px;
+}
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 60%;
+    text-align: center;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+
+}
+
+.columna i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.columna p {
+    margin: 0 auto;
+    text-indent: 1cm;
+    text-align: justify;
+}
+
+/* Proyectos */
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0;
+    height: 180px;
+    width: 100%;
+}
+
+.overlay p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    /*opacity: 0.2;*/
+}
+.proyecto:hover .overlay {
+    /*opacity: 1;*/
+}
+
+.overlay .iconos-contenedor {
+    display: block;
+}
+
+.overlay i {
+    color: black;
+    font-size: 50px;
+    margin: 10px;
+}
+
+/*  Articulos  */
+.articulos {
+    min-height: 500px;
+    padding: 30px;
+    /*background:rgb(223,189,150);*/
+
+}
+.articulos .card {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+.articulos .card-header {
+    font-weight: bold;
+}
+
+/*Testimonios */
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel {
+    max-width: 800px;
+
+}
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item .container i {
+    font-size: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    font-family: 'Share Tech Mono', monospace;
+    max-width: 70%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 110%;
+}
+.testimonio-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;    
+}
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+.testimonio-info p {
+    margin-bottom: 0;
+}
+.testimonio-info .cliente {
+    font-size: 1.2rem;
+}
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* Contacto */
+.contacto .container {
+   max-width: 1100px; 
+   min-height: 200px;
+   padding: 20px;
+}
+.contacto .rectangulo {
+   margin-top: -5rem;
+   background-color: rgb(13, 110, 253); 
+   border-radius: 10px;
+   box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button a {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button a:hover {
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+    color: black;
+  }
+
+/* boton de whatsapp */  
+.botonWhatsapp{
+    position : fixed;
+	right: 5%;
+	top: 70%;
+	width: 8%;
+	border-radius: 50%;	
+	background-color: transparent;
+	border-color: transparent;
+}
+.botonWhatsapp:hover{
+    width: 10.5%;
+}
+.botonWhatsapp img{
+    width: 100%;
+}
+
+
+  /* pie de pagina */
+footer {
+    min-height: 500px;
+}
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    background-color: white;
+}
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+
+/*......cafe ......*/
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ /* background:rgb(161, 128, 90);*/
+  position: relative;
+  height: 120px;
+}
+
+.cup {
+  width:76px;
+  height:76px;
+  background:#dedede;
+  border-radius:50%;
+  position:absolute;
+  left:80%;
+  margin-left:-38px;
+  top:25%;
+  box-shadow:-4px -1px 0 rgba(0,0,0,0.2);
+}
+
+.cup:after{
+  content:"";
+  width:66px;
+  height:66px;
+  position:absolute;
+  border-radius:50%;
+  background:linear-gradient(-45deg, #cbcbcb, #f2f2f2 );
+  left:50%;
+  margin-left:-33px;
+  top:5px;
+}
+
+.coffee{
+  width:47px;
+  height:47px;
+  /*background:#613317;*/
+  /*background-image: linear-gradient(15deg, transparent 0px, transparent 29px, rgba(255,255,255,0.05) 29px, rgba(255,255,255,0.05) 47px);*/
+  border-radius:50%;
+  position:absolute;
+  left:50%;
+  margin-left:-25px;
+  z-index:1;
+  top:50%;
+  margin-top:-26px;
+  border:3px solid #e9e9e9;
+  /*box-shadow:-3px 2px 0 rgba(0,0,0,0.1);*/
+  transform:rotate(30deg);
+  transition:transform 0.3s;
+}
+
+.coffee:after{ /*assa*/
+ content:"";
+  width:15px;
+  height:8px;
+  position:absolute;
+  left:-19px;
+  top:18px;
+  background:linear-gradient(90deg, #d6d6d6, #aeaeae);
+  box-shadow:0px 2px 0 rgba(0,0,0,0.2);
+}
+
+.coffee:before {
+  content:"";
+  width:47px;
+  height:47px;
+  background-image: radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
+  background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), -webkit-radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), -webkit-radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
+  background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 95%), -moz-radial-gradient(5% 9%, ellipse, rgba(255,255,255,0.1), transparent 5%), -moz-radial-gradient(0% 0%, ellipse, rgba(255,255,255,0.3), transparent 55%);
+  position:absolute;
+  left:0;
+  border-radius:50%;
+}
+.cup:hover .coffee {
+  transform:rotate(195deg);
+}
+
+.smoke {
+  width:70px;
+  height:100px; 
+  /*background:;*/
+  position:absolute;
+  left:80%;
+  margin-left:-35px;
+  top:0;
+  background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -webkit-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -webkit-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), -webkit-radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
+  background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -moz-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -moz-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), -moz-radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
+  background-image: radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%), radial-gradient(55% 35%, ellipse, rgba(255,255,255,0.2), transparent 15%);
+  animation:bk 11s infinite ;
+}
+
+.smoke:after {
+  content:"";
+  width:100px;
+  height:100px; 
+  /*background:;*/ 
+  position:absolute;
+  background-image: -webkit-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -webkit-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -webkit-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%);
+  background-image: -moz-radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), -moz-radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), -moz-radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%);
+  background-image: radial-gradient(75% 59%, ellipse, rgba(255,255,255,0.2), transparent 25%), radial-gradient(25% 70%, ellipse, rgba(255,255,255,0.2), transparent 15%), radial-gradient(35% 61%, ellipse, rgba(255,255,255,0.2), transparent 10%);
+  animation:bk 2s 1s infinite;
+}
+
+
+@keyframes bk {
+  0%{ background-position:0 0; opacity:0; }
+  15%, 85% { opacity:1;}
+  100%{ background-position:-20px -25px, -5px -25px, 0px -25px, 0px -25px; opacity:0;}
+}
+
+.txt{
+  position:absolute;
+  top:184px;
+  width:150px;
+  left:50%;
+  margin-left:-75px;
+}
+
+.txt a{
+  text-decoration:none;
+  color:#613317;
+}
+
+.txt a:hover {
+  text-decoration:underline;
+}
+
+/*..... fin cafe ..........*/
+
+
+
+/* Adaptable (Responsivo) */
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        padding: 1rem;
+        background-color: #f5f6f7;
+    }
+
+    .hero {
+        min-height: 350px;
+        text-align: center;
+
+    }
+    
+    .hero-principal {
+        padding: 1rem;
+    }
+    .hero-imagen-perfil {
+        width: 180px;
+        height: auto;
+    }
+    .hero-principal h2 {
+        font-size: 1rem;
+        color: #615151;
+    }
+    .hero-inferior-imagen{
+        width: 60%;
+    }
+
+/*.....  cafe ........ */
+
+
+.blogs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+  height: 110px;
+}
+
+  
+ 
+
+/*...... fin cafe .....*/
+
+  /* .............*/
+   .sobre-mi {
+    height: auto;
+    padding: 2px;
+    }
+    
+    
+    .sobre-mi .contenedor {
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .seccion-titulo {
+        font-size: 1.5rem;
+        padding: 15px 0;
+        text-align: center;
+
+    }
+    
+    .seccion-texto {
+        font-size: 1rem;
+    }
+  /* ....Experiencia.........*/
+  .experiencia {
+    padding: 20px;
+    }
+
+    .experiencia-titulo {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .badges-contenedor {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .badge {
+        margin: 5px;
+    }
+
+    .experiencia .columna {
+        padding: 20px;
+    }
+
+    .experiencia .columna:hover {
+        color: white;
+        background-color: #1b1b32;
+    }
+
+    .columna i {
+        font-size: 2rem;
+        padding: 8px 19px;
+    }
+
+    .columna p {
+        margin: 0 auto;
+        text-indent: 0;
+        text-align: center;
+    }
+
+  /*.......Proyectos..................*/
+
+
+
+  .proyectos-recientes {
+    padding: 10px;
+    }
+
+    .proyectos-contenedor {
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    .overlay{
+        padding: 0;
+        width: 100%;
+    }
+
+    .overlay p {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 0;
+        padding: 0;
+        margin-top: 10px;
+
+    }
+    .overlay .iconos-contenedor {
+        display: block;
+        align-items: center;
+    }
+    
+    .overlay i {
+        font-size: 50px;
+    }
+   /*..........................*/
+
+   /*  Articulos  */
+        .articulos {
+            min-height: 400px;
+            padding: 0;
+        }
+        .articulos .card {
+            width: 90%;
+            max-width: 600px;
+            margin: 10px;
+        }
+        .articulos .card-header {
+            font-weight: bold;
+        }
+
+    /*..............................*/
+
+/*Testimonios */
+    .testimonios {
+        padding: 20px 10px 40px 10px;
+    }
+    .testimonios .carousel {
+        max-width: 800px;
+
+    }
+    .carousel-item {
+        height: 500px;
+    }
+
+    .carousel-item .container i {
+        font-size: 90px;
+        margin: 5px 5px 5px 5px;
+    }
+    .testimonio-imagen{
+        height: 100px;
+        width: 100px;
+    }
+
+    .testimonio-texto {
+        max-width: 90%;
+        font-size: 15px;
+    }
+
+/* Contacto */
+    .contacto .container {
+        padding: 15px;
+    }
+
+
+    .contacto .descripcion {
+        color: white;
+        font-size: 1rem;
+    }
+    .contacto button {
+        padding: 1em 1em;
+        margin: 10px;
+    }
+
+    .contacto button i {
+        font-size: 1.2rem;
+    }
+
+
+    /* boton de whatsapp */  
+
+    .botonWhatsapp{
+        position : fixed;
+        right: 2%;
+        top: 45%;
+        width: 8%;
+    }
+    .botonWhatsapp{
+        width: 20%;
+    }
+    .botonWhatsapp:hover{
+        width: 20.5%;
+    }
+
+  /* pie de pagina */
+  footer {
+    min-height: 300px;
+    }
+    .footer-logo {
+        height: 70px;
+        width: 70px;
+        margin: 10px;
+    }
+    .footer-texto {
+        font-size: 1rem;
+        padding: 20px;
+        margin-bottom: 30px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .iconos-redes-sociales a {
+        width: 30px;
+        height: 30px;
+
+        padding: 1px;
+        margin: 5px;
+    }
+    .iconos-redes-sociales i {
+        font-size: 1rem;
+    }
+
+    .derechos-de-autor {
+        font-size: 11px;
+        color: #aeaeae;
+        padding: 20px;
+    }    
+    
+}
+/*
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonio-texto {
+        font-size: 18px;
+    }
+}
+
+
+
+@media  screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+    
+}
+*/
